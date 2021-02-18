@@ -27,7 +27,6 @@ int main(int argc, char *argv[]){
     BRACEWRAP(std::cout << qs->getArray())
 
     delete qs;
-    delete [] argv;
 
 	return 0;
 }
