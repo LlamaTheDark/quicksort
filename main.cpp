@@ -26,5 +26,7 @@ int main(int argc, char *argv[]){
     TITLE("NEW ARRAY:")
     BRACEWRAP(std::cout << qs->getArray())
 
+    delete qs;
+
 	return 0;
 }
