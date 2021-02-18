@@ -12,8 +12,6 @@
 #include <string>
 #include "QSInterface.h"
 
-#define NULL 0
-
 class QS : public QSInterface {
 private:
     int *arr = NULL;
