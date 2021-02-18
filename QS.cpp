@@ -25,7 +25,7 @@ void QS::quicksort(int first, int last){
     quicksort(pivot+1, last);  // recursive call to right part
 }
 void QS::sortAll(){
-    
+    quicksort(0, size-1);
 }
 
 int QS::medianOfThree(int left, int right){
@@ -74,7 +74,6 @@ int QS::getSize() const { return size; }
 bool QS::addToArray(int value){
     if(size >= capacity) return false;
 
-
     arr[size] = value;
     size++;
 
@@ -93,6 +92,7 @@ bool QS::createArray(int capacity){
 }
 
 void QS::clear(){
+    delete [] arr;
     arr = NULL;
     size = 0;
     capacity = 0;
