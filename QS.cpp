@@ -10,7 +10,6 @@ QS::QS(){
 }
 QS::~QS(){
     delete [] arr;
-    arr = NULL;
 }
 
 void QS::quicksort(int first, int last){
