@@ -10,25 +10,52 @@
 
 int main(int argc, char *argv[]){
 
-    QS *qs = new QS();
+    int a = -1;
+    int b = 0;
 
-    TITLE("CREATING AND PRINTING ARRAY FROM ARGS:")
-    qs->createArray(argc-1);
+    a^=b;
+    b^=a;
+    a^=b;
 
-    for(int i = 1; i < argc; i++){
-        qs->addToArray(std::stoi(argv[i]));
-    }
+    std::cout << "a: " << a << "b: " << b << std::endl;
 
-    BRACEWRAP(std::cout << qs->getArray())
-    std::cout << std::endl;
+    // QS *qs = new QS();
 
-    TITLE("SORTING ARRAY")
-    qs->sortAll();
+    // TITLE("CREATING AND PRINTING ARRAY FROM ARGS:")
+    // qs->createArray(argc-1);
 
-    TITLE("SORTED ARRAY")
-    BRACEWRAP(std::cout << qs->getArray())
+    // for(int i = 1; i < argc; i++){
+    //     qs->addToArray(std::stoi(argv[i]));
+    // }
 
-    delete qs;
+    // BRACEWRAP(std::cout << qs->getArray())
+    // std::cout << std::endl;
+
+    // TITLE("TESTING PARTITION ALG")
+    // std::cout << qs->partition(0, 9, 9) << std::endl;
+    // BRACEWRAP(std::cout << qs->getArray())
+    // std::cout << std::endl;
+
+    // std::cout << qs->partition(0, 9, 0) << std::endl;
+    // BRACEWRAP(std::cout << qs->getArray())
+    // std::cout << std::endl;
+
+    // std::cout << qs->partition(0, 4, 2) << std::endl;
+    // BRACEWRAP(std::cout << qs->getArray())
+    // std::cout << std::endl;
+
+    // std::cout << qs->partition(5, 9, 7) << std::endl;
+    // BRACEWRAP(std::cout << qs->getArray())
+    // std::cout << std::endl;
+    
+
+    // // TITLE("SORTING ARRAY")
+    // // qs->sortAll();
+
+    // // TITLE("SORTED ARRAY")
+    // // BRACEWRAP(std::cout << qs->getArray())
+
+    // delete qs;
 
 	return 0;
 }
